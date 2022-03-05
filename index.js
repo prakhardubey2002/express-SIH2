@@ -1,10 +1,16 @@
 const express = require('express')
 const app = express()
-const path = require('path')
 const port = 4000
+const socket = require('socket.io')
 
-app.use(express.static("public"));
-
-app.listen(port, () => {
+var server =app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+app.use(express.static('public'));
+
+//socket
+var io = socket(server);
+io.on('connection',function(socket){
+  console.log('made socket connection')
+});
