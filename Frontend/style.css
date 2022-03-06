@@ -117,3 +117,31 @@ h2{
     width: 100%;
     padding: 0.8rem;
 }
+.form .data form  button{
+    margin: 1rem;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 1rem;
+    background-color:var(--Primary);
+    border: 1px solid var(--Primary);
+    color: white;
+    transition: 0.4s all ease;
+}
+.form .data form  button:hover{
+    transform: scale(1.04);
+}
+footer{
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background-color: black;
+    
+}
+footer h3{
+    font-weight: 100;
+    font-size: 0.8rem;
+}
